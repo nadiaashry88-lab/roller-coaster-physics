@@ -101,7 +101,7 @@ plt.close(fig3)
 st.header("Energy Conservation Check")
 initial_energy = mass*g*height + 0.5*mass*initial_speed**2
 st.write(f"Initial energy: {initial_energy:,.2f} J")
-st.write(f"Bottom energy: {total_energy.iloc[-1]:,.2f} J")
+st.write(f"Bottom energy: {total_energy[-1]:,.2f} J")
 
 st.download_button(
     "Download results as CSV",
